@@ -6,6 +6,7 @@ qrImage=container.querySelector('.qr-code img');
 generateBtn.addEventListener('click',()=>{
     let qrValue=qrInput.value;
     if(!qrValue){
+        document.getElementById("emp").innerHTML = "Empty field cannot be further proccessed";
         return;     // If input is empty than return from here
     }
     generateBtn.innerText="Generating QR Code...";
